@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/styele.css">
+    <script src="./asset/js/app.js" defer></script>
+    <title>Estoque</title>
+</head>
+
+<body>
+    <header>
+        <h1>Estoque Empresarial</h1>
+    </header>
+    <main>
+        <section class="register">
+            <form>
+                <label for="name-product">Nome:</label>
+                <input type="text" name="name-product" id="name-product" placeholder="Nome do produto">
+                <label for="price-product">Preço:</label>
+                <input type="number" name="price-product" id="price-product" placeholder="Valor da unidade (reais)">
+                <label for="quantity-product">Quantidade:</label>
+                <input type="number" name="quantity-product" id="quantity-product"
+                    placeholder="Quantidade de produto (unid)">
+                <div class="btns">
+                    <button class="btn-save">SALVAR</button>
+                    <button class="btn-cancel">CANCELAR</button>
+                </div>
+            </form>
+        </section>
+        <section class="show-data">
+            <table border="1">
+                <caption>PRODUTOS DO ESTOQUE</caption>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Produto</th>
+                        <th>Preço(R$)</th>
+                        <th>Quantidade(Unid)</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody class="products"></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

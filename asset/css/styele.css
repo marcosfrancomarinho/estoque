@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@800&family=Roboto:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --seasalt: #f8f9faff;
+    --antiflash-white: #e9ecefff;
+    --platinum: #dee2e6ff;
+    --french-gray: #ced4daff;
+    --french-gray-2: #adb5bdff;
+    --slate-gray: #6c757dff;
+    --outer-space: #495057ff;
+    --onyx: #343a40ff;
+    --eerie-black: #212529ff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62, 5%;
+    font-weight: 500;
+    font-style: normal;
+    min-height: 100vh;
+}
+
+header {
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--eerie-black);
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.register {
+    display: flex;
+    width: 40vw;
+    border: 1.6px solid var(--french-gray);
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.register form {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+
+input {
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--french-gray-2);
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 1em;
+    text-transform: lowercase;
+}
+
+
+button {
+    border: none;
+    outline: none;
+    width: 25%;
+    border: 2px solid var(--eerie-black);
+    background-color: var(--eerie-black);
+    color: var(--antiflash-white);
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: 1s ease background;
+    padding: 4px;
+}
+
+button:hover {
+    background-color: var(--french-gray);
+    color: var(--eerie-black);
+    font-weight: 600;
+}
+
+.show-data {
+    display: flex;
+    width: 40vw;
+    border-radius: 3px;
+}
+
+.show-data table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    background-color: var(--eerie-black);
+    color: var(--seasalt);
+}
+span{
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    width: 20px;
+    cursor: pointer;
+}
+th,
+td {
+    text-align: center;
+    padding: 10px;
+    font-weight: normal;
+}
+
+caption {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+
+@media screen and (max-width:700px) {
+    main {
+        padding: 10px;
+    }
+
+    .register {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .show-data {
+        width: 100%;
+    }
+}

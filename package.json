@@ -1,0 +1,19 @@
+{
+  "name": "estoque",
+  "version": "1.0.0",
+  "description": "projeto de gerenciador de um estoque (javascript) progamaçao orientada a objeto.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosfrancomarinho/estoque.git"
+  },
+  "author": "marcos marinho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcosfrancomarinho/estoque/issues"
+  },
+  "homepage": "https://github.com/marcosfrancomarinho/estoque#readme"
+}
